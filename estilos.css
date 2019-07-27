@@ -2,12 +2,22 @@
 	font-family: roboto;
 	src:url(fonts/roboto/Roboto-Regular.ttf);
 }
+
+@font-face{
+	font-family: lora;
+	src:url(fonts/lora/Lora-Bold.ttf);
+}
+
+@font-face{
+	font-family: poppins;
+	src:url(fonts/poppins/poppins-Regular.ttf);
+}
 body{
-	font-family: open sans;
+	font-family: poppins;
 	color: #63666A;
 }
 h1, h2{
-	font-style: italic;
+	font-family: lora;
 }
 h1{
 	font-size: 4rem;
@@ -15,9 +25,14 @@ h1{
 h2{
 	font-size: 3rem;
 }
+
+.nav-link{
+	font-size: 1.1rem;
+}
+
 .text-1-5{
 	font-size: 1.5rem;
-	line-height: 1.8rem;
+	line-height: 1.7rem;
 }
 .bg-color-morado-1{
 	background: rgba(238,107,255,1);
@@ -38,6 +53,9 @@ h2{
 .bg-color-morado-3{
 	background-color: #41273B;
 }
+.bg-color-morado-4{
+	background-color: #c6c6c6;
+}
 .zi-1{
 	z-index: 1;
 }
@@ -52,7 +70,7 @@ h2{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(107,48,119, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-brand img{
-	height: 8rem;
+	height: 5rem;
 }
 .cont-info-icon{
 	text-align: center;
@@ -72,18 +90,54 @@ h2{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.boton-b{
+.cont-1 p{
+	text-align: justify;
+}
+.btn-morado{
+	border: solid #6b3077;
+	cursor: pointer;
+	width: 50%;
+}
+
+.btn-morado:hover{
+	background-color: #fff;
+	border: solid #6b3077;
+	color: #6b3077 !important;
+	font-weight: bold;
+}
+.cont-2 h2{
+	text-align: right;
+}
+.cont-2 p{
+	text-align: right;
+}
+
+.boton-blanco{
 	border: 3px #fff solid;
+	width: 50%;
+	float: right;
+	cursor: pointer;
+}
+.boton-blanco:hover{
+	background-color: #fff;
+	color: #41273B;
+	font-weight: bold;
+}
+.fondo-textura{
+	background-image: url(image/textura.png);
 }
 .cont-4{
 	background-image: url(image/bg-4.png);
 	background-position: center;
 }
 input[placeholder], textarea[placeholder]{
-	color: #fff;
+	color: rgba(95,43,103,0.3);
 }
+
 input, textarea{
-	border-radius: 2px;
+	background-color: transparent;
+	border: solid 2px rgba(95,43,103,0.3);
+	border-radius: 1.5px;
 }
 
 @media(max-width: 767px){
